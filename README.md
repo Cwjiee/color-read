@@ -9,7 +9,7 @@ Run `clread <filename>`
 build from source (if go is installed in your machine)
 
 ```
-git clone https://github.com/Cwjiee/clread
+git clone https://github.com/Cwjiee/color-read.git
 cd clread
 make
 ```
