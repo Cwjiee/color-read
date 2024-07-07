@@ -17,6 +17,7 @@ make
 Will be testing out easier installation methods in the future
 
 ### Demo
+file content (left) | cli output (right)
 
 <img src="https://github.com/Cwjiee/color-read/blob/main/exp/exp1.png" />
 
