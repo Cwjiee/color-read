@@ -1,3 +1,5 @@
+all: install build
+
 install:
 	go get ./...
 	echo "all dependencies installed successfully"
