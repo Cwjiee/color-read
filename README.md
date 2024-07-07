@@ -1,0 +1,23 @@
+# Color Read
+
+A cli tool to parses hex colours from a file and renders it in the terminal
+
+### Usage
+Run `clread <filename>`
+
+### Installation
+build from source (if go is installed in your machine)
+
+```
+git clone https://github.com/Cwjiee/clread
+cd clread
+make
+```
+
+Will be testing out easier installation methods in the future
+
+### Demo
+
+<img src="https://github.com/Cwjiee/color-read/blob/main/exp/exp1.png" />
+
+<img src="https://github.com/Cwjiee/color-read/blob/main/exp/exp2.png" />
