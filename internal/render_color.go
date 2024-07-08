@@ -15,10 +15,10 @@ func RenderColor() {
 		os.Exit(1)
 	}
 
-	hexs := ReadColor(f)
+	hexColors := ReadColor(f)
 
-	if len(hexs) > 0 {
-		for _, c := range hexs {
+	if len(hexColors) > 0 {
+		for _, c := range hexColors {
 			color.Hex(c, true).Print("#" + c)
 			color.Hex(c, false).Println(" #" + c)
 		}
