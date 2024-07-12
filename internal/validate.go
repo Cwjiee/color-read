@@ -8,13 +8,7 @@ import (
 
 func Validate() ([]byte, string) {
 	var error string
-
-	//	if len(os.Args) != 2 {
-	//		error = color.Red.Text("Error: please select a file to parse")
-	//		return nil, error
-	//	}
-	//
-	//	args := os.Args[1]
+	var filename string
 
 	path, err := os.Getwd()
 	if err != nil {
@@ -22,7 +16,14 @@ func Validate() ([]byte, string) {
 		return nil, error
 	}
 
-	filename := ListFiles()
+	if len(os.Args) == 2 {
+		filename = os.Args[1]
+	} else if len(os.Args) == 1 {
+		filename = ListFiles()
+	} else {
+		error = color.Red.Text("Error: please select a file to parse")
+		return nil, error
+	}
 
 	f, err := os.ReadFile(path + "/" + filename)
 	if err != nil {
