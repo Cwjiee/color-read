@@ -3,7 +3,7 @@ all: install build
 install:
 	@echo
 	@echo "********** installing dependencies **********"
-	go get ./...
+	go get .
 	@echo
 	@echo "********** all dependencies installed successfully **********"
 

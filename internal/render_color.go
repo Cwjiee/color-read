@@ -1,7 +1,6 @@
 package internal
 
 import (
-	"fmt"
 	"os"
 
 	"github.com/gookit/color"
@@ -11,7 +10,7 @@ func RenderColor() {
 
 	f, err := Validate()
 	if err != "" {
-		fmt.Println(err)
+		color.Red.Println(err)
 		os.Exit(1)
 	}
 
@@ -23,6 +22,6 @@ func RenderColor() {
 			color.Hex(c, false).Println(" #" + c)
 		}
 	} else {
-		fmt.Println("There are no colors found in this file")
+		color.Red.Println("There are no colours found in this file")
 	}
 }
