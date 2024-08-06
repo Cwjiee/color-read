@@ -10,7 +10,8 @@ install:
 build:
 	@echo
 	@echo "********** building executable **********"
-	chmod +x build_local.sh
-	./build_local.sh
+	go build -o clread
+	rm -f $(HOME)/go/bin/clread
+	mv clread $(HOME)/go/bin/
 	@echo
 	@echo "********** clread has been built successfully **********"
